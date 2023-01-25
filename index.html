@@ -29,6 +29,9 @@
       color: #f1f1f1;
       font-family: 'Rajdhani', sans-serif;
     }
+    p {
+      line-height: 1.3em;
+    }
     .content {
       padding-top: 2em;
       padding-bottom: 8em;
@@ -40,7 +43,7 @@
       margin: 0 auto;
     }
     img.header-logo {
-      margin: 2em auto 1em auto;
+      margin: 1em auto 1em auto;
       width: 500px;
       max-width: 100%;
     }
@@ -85,6 +88,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-items: center;
       width: 1024px;
       max-width: 100%;
       margin: 0 auto;
@@ -100,9 +104,15 @@
     .col.sftd-3 {
       width: 23%;
     }
+    .col.sftd-6 {
+      width: 48%;
+    }
     @media screen and (max-width: 600px) {
       .col.sftd-3 {
         width: 45%;
+      }
+      .col.sftd-6 {
+        width: 98%;
       }
     }
 
@@ -125,13 +135,19 @@
     <div class="color-grid-4"></div>
   </div>
   <section class="content">
-    <img src="images/logo-hero-hover.png" class="header-logo" />
-    <h3 class="uppercase">Limited run premium soft goods</h3>
-    <h3 class="uppercase">Handmade in the USA</h3>
-    <h3 class="uppercase">Bags - Pouches - EDC</h3>
-    <p style="margin-top: 3em">Handmade in Colorado Springs CO.  Sifted is a softgoods company focused on limited release, ultra premium products for all your carry needs.  We focus on rare and premium fabrics and with an extreme attention to detail.</p>
+    <div class="sftd-row">
+      <div class="sftd-6 col">
+        <img src="images/logo-hero-hover.png" class="header-logo" />
+      </div>
+      <div class="sftd-6 col">
+        <h3 class="uppercase">Limited run premium soft goods</h3>
+        <h3 class="uppercase">Handmade in the USA</h3>
+        <h3 class="uppercase">Bags - Pouches - EDC</h3>
+      </div>
+    </div>
+    <p style="margin-top: 2em;padding:0 3em;">Handmade in Colorado Springs CO.  Sifted is a softgoods company focused on limited release products crafted with ultra premium materials and an extreme attention to detail.</p>
     
-    <h1 class="text-center" style="margin-top:3em;">Upcoming Releases...</h1>
+    <h1 class="text-center" style="margin-top:2em;">Upcoming Releases...</h1>
     <div class="sftd-row">
       <div class="sftd-3 col"><img src="images/product_shots/log_roll.jpeg" /></div>
       <div class="sftd-3 col"><img src="images/product_shots/clutch.jpeg" /></div>
