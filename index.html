@@ -78,22 +78,37 @@
       }
     }
 
+
+    /* FLEX */
     .sftd-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       width: 1024px;
       max-width: 100%;
-      display: flex;
       margin: 0 auto;
     }
     .sftd-row > .col {
       padding: 0.25em;
-/*      display: inline-grid;*/
     }
     .col img {
       max-width: 100%;
     }
+
+
     .col.sftd-3 {
-      width: 25%;
+      width: 23%;
     }
+    @media screen and (max-width: 600px) {
+      .col.sftd-3 {
+        width: 45%;
+      }
+    }
+
+
+
+
+    /* HELPERS */
     .text-center {
       text-align: center;
     }
