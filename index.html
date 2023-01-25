@@ -15,7 +15,7 @@
   <meta property="og:description" content="Handmade softgoods from the USA">
   <meta property="og:image" content="images/logo-white.png">
 
-<!--   <link rel="icon" href="/favicon.ico">
+  <!--   <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
 
@@ -28,15 +28,8 @@
       color: #f1f1f1;
       font-family: 'Rajdhani', sans-serif;
     }
-    .hero-image {
-      background-image: url('images/product_shots/log_roll.jpeg');
-      background-repeat: no-repeat;
-      background-position: 100%;
-      background-size: 100%;
-      min-height: 300px;
-    }
     .content {
-      padding-top: 4em;
+      padding-top: 2em;
       padding-bottom: 8em;
       text-align: center;
       letter-spacing: 0.5px;
@@ -45,9 +38,9 @@
       max-width: 1024px;
       margin: 0 auto;
     }
-    .content img {
-      margin: 2em auto;
-      width: 600px;
+    img.header-logo {
+      margin: 2em auto 1em auto;
+      width: 410px;
       max-width: 100%;
     }
     .uppercase {
@@ -64,7 +57,6 @@
       height: 50px;
       width: 50px;
       color: blue;
-/*      border: 1px solid white;*/
     }
     .color-grid-1 {
 /*      background-color: #ACDFDA;*/
@@ -85,6 +77,26 @@
         display: inline-block;
       }
     }
+
+    .sftd-row {
+      width: 1024px;
+      max-width: 100%;
+      display: flex;
+      margin: 0 auto;
+    }
+    .sftd-row > .col {
+      padding: 0.25em;
+/*      display: inline-grid;*/
+    }
+    .col img {
+      max-width: 100%;
+    }
+    .col.sftd-3 {
+      width: 25%;
+    }
+    .text-center {
+      text-align: center;
+    }
   </style>
 
 </head>
@@ -97,12 +109,20 @@
     <div class="color-grid-4"></div>
   </div>
   <section class="content">
-    <img src="images/logo-hero-hover.png" />
+    <img src="images/logo-hero-hover.png" class="header-logo" />
     <p class="uppercase">Limited run premium soft goods</p>
     <p class="uppercase">Handmade in the USA</p>
     <p class="uppercase">Bags - Pouches - EDC</p>
     <p style="margin-top: 3em">Handmade in Colorado Springs CO.  Sifted is a softgoods company focused on ultra premium products for all your carry needs.  We focus on unique premium fabrics and build quality with extreme attention to detail.</p>
+    
+    <h1 class="text-center" style="margin-top:3em;">Upcoming Releases...</h1>
+    <div class="sftd-row">
+      <div class="sftd-3 col"><img src="images/product_shots/log_roll.jpeg" /></div>
+      <div class="sftd-3 col"><img src="images/product_shots/clutch.jpeg" /></div>
+      <div class="sftd-3 col"><img src="images/product_shots/nack_pouch_m.jpeg" /></div>
+      <div class="sftd-3 col"><img src="images/product_shots/nack_pouch_s.jpeg" /></div>
+    </div>
   </section>
-  <div class="hero-image"></div>
+
 </body>
 </html>
