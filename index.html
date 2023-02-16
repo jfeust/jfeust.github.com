@@ -23,7 +23,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet"> 
   <link href="normalize.css" rel="stylesheet"> 
+  
+  <link href="css/zoom.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
+
+
   <style type="text/css">
     body {
       background-color: #1f1522;
@@ -92,7 +98,7 @@
       align-items: center;
       width: 1024px;
       max-width: 100%;
-      margin: 0 auto 2em auto;
+      margin: 0 auto;
     }
     .sftd-row > .col {
       padding: 0.25em;
@@ -104,6 +110,9 @@
 
     .col.sftd-3 {
       width: 23%;
+    }
+    .col.sftd-4 {
+      width: 32%;
     }
     .col.sftd-6 {
       width: 48%;
@@ -124,6 +133,9 @@
     .text-center {
       text-align: center;
     }
+    .mb {
+      margin-bottom: 2em;
+    }
 
     form input {
       padding: 1em;
@@ -137,6 +149,13 @@
     form button {
       margin-top: 1em;
       padding: 1em 2em;
+    }
+
+    .pageclip-form {
+      padding: 1em !important;
+    }
+    .pageclip-form__success {
+      background: hsla(259.2, 67.1%, 15.5%, 0.8) !important;
     }
   </style>
 
@@ -160,20 +179,26 @@
         <h3 class="uppercase">Bags - Pouches - EDC</h3>
       </div>
     </div>
-    <p style="margin-top: 2em;padding:0 3em;font-size: 1.2em;">Handmade in Colorado Springs CO.  Sifted is a softgoods company focused on limited release products crafted from ultra premium materials with an extreme attention to detail.</p>
+    <p style="margin-top: 2em; margin-bottom: 3em; padding:0 3em;font-size: 1.2em;">Sifted is a softgoods company focused on limited release products crafted from ultra premium materials with an extreme attention to detail.</p>
     
     <!-- <h1 class="text-center" style="margin-top:2em;">Upcoming Releases...</h1> -->
-    <div class="sftd-row">
+    <!-- <div class="sftd-row mb">
       <div class="sftd-3 col"><img src="images/product_shots/log_roll.jpeg" /></div>
       <div class="sftd-3 col"><img src="images/product_shots/clutch.jpeg" /></div>
       <div class="sftd-3 col"><img src="images/product_shots/nack_pouch_m.jpeg" /></div>
       <div class="sftd-3 col"><img src="images/product_shots/nack_pouch_s.jpeg" /></div>
+    </div> -->
+
+    <div class="sftd-row mb">
+      <div class="sftd-4 col"><img src="images/product_shots/nak-s-1.jpeg" data-action="zoom"/></div>
+      <div class="sftd-4 col"><img src="images/product_shots/nak-s-2.jpeg" data-action="zoom"/></div>
+      <div class="sftd-4 col"><img src="images/product_shots/collection_1.jpeg" data-action="zoom"/></div>
     </div>
 
 
     <div class="sftd-row">
       <div class="sftd-12 col">
-        <h1>Stay up to date on the latest releases</h1>
+        <h1 style="margin-bottom:0">Stay up to date on the latest releases</h1>
       </div>
       <div class="sftd-12 col">
         <form action="https://send.pageclip.co/J2kAXlfD5DUIYuHKphivZeJm44QHzz5M" class="pageclip-form" method="post">
@@ -188,8 +213,11 @@
         </form>
       </div>
     </div>
+
+    <p style="margin-top: 8em;">Handmade in Colorado Springs CO.</p>
   </section>
 
   <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
+<script src="javascript/zoom.min.js"></script>
 </html>
