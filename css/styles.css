@@ -121,7 +121,7 @@ form input {
   display: block;
   margin: 0.5em auto;
   max-width: 100%;
-  width: 400px;
+  max-width: 400px;
 }
 form button {
   margin-top: 1em;
