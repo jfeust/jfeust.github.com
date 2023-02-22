@@ -1,3 +1,12 @@
+.header-hero {
+  background-image: url('../images/background_test.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
 body {
   background-color: #1f1522;
   color: #f1f1f1;
@@ -105,7 +114,8 @@ img.header-logo {
 }
 
 form input {
-  padding: 1em;
+  padding: 1.2em;
+  font-size: 1.1em;
 }
 .pageclip-form input {
   display: block;
@@ -116,6 +126,10 @@ form input {
 form button {
   margin-top: 1em;
   padding: 1em 2em;
+  font-size: 1.1em;
+}
+form button:hover {
+  cursor: pointer;
 }
 
 .pageclip-form {
