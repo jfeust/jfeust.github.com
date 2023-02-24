@@ -120,7 +120,6 @@ form input {
 .pageclip-form input {
   display: block;
   margin: 0.5em auto;
-  width: 100%;
   max-width: 400px;
   text-align: center;
 }
