@@ -113,6 +113,11 @@ img.header-logo {
   margin-bottom: 2em;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 form input {
   padding: 1.2em;
   font-size: 1.1em;
