@@ -1,3 +1,9 @@
+.e-mail:before {
+  content: attr(data-website) "\0040" attr(data-user);
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
 .header-hero {
   background-image: url('../images/hero_images/pouches_and_logo.png');
   background-repeat: no-repeat;
@@ -27,6 +33,9 @@ body {
 p {
   line-height: 1.3em;
 }
+a, a:hover, a:visited, a:active, .link {
+  color: #04d0ff;
+}
 .content {
   padding-top: 2em;
   padding-bottom: 8em;
@@ -43,6 +52,9 @@ img.header-logo {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.hide {
+  display: none;
 }
 
 .color-grid {
