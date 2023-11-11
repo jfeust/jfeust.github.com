@@ -3,7 +3,14 @@
   unicode-bidi: bidi-override;
   direction: rtl;
 }
-
+.top-logo {
+  padding-top: 2em;
+  text-align: center;
+}
+.top-logo img {
+  max-width: 600px;
+  width: 100%;
+}
 .header-hero {
   background-image: url('../images/hero_images/pouches_and_logo.png');
   background-repeat: no-repeat;
@@ -25,7 +32,7 @@
 }
 
 body {
-  background-color: #1b0c20;
+  background-color: #18061e;
   color: #f1f1f1;
   font-family: 'Rajdhani', sans-serif;
   font-size: 1.2em;
@@ -37,7 +44,7 @@ a, a:hover, a:visited, a:active, .link {
   color: #04d0ff;
 }
 .content {
-  padding-top: 2em;
+  padding-top: 0em;
   padding-bottom: 8em;
   text-align: center;
   letter-spacing: 0.5px;
